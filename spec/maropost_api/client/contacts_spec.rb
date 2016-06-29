@@ -14,7 +14,7 @@ describe MaropostApi::Client::Contacts do
                    first_name: 'haidar maropost api test' }
 
         response = @client.contact_upsert(list_ids: list_ids, params: params)
-        expect(response['email']).to eq(params['email'])
+        expect(response['email']).to eq(params[:email])
       end
     end
   end
