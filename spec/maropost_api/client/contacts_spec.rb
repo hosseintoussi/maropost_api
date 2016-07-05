@@ -6,13 +6,12 @@ describe MaropostApi::Client::Contacts do
   end
 
   describe '#contact_upsert', vcr: true do
-    context 'with correct params' do
-      it 'sends upsert request with provided contact params' do
+    context 'with correct params' do it 'sends upsert request with provided contact params' do
         list_ids = '43405'
-        params = { email: 'haidar.mvstg+test_maropost_api_client@gmail.com',
-                   first_name: 'haidar maropost api test' }
+        params = { email: 'test@example.com',
+                   first_name: 'test' }
 
-        response = @client.contact_upsert(list_ids: list_ids, params: params)
+        response = @client.add_to_list(list_ids: list_ids, params: params)
         expect(response['email']).to eq(params[:email])
       end
     end
