@@ -3,7 +3,7 @@ module MaropostApi
     module Contacts
 
       def find_by_email(email:)
-        @request.get(endpoint: "/contacts/email.json?contact[email]=#{email}")
+        @request.get(endpoint: "contacts/email.json?contact[email]=#{email}")
       end
 
       def add_to_list(list_ids:, params:)
