@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.maropost.com/accounts/ACCOUNT_ID/contacts.json?list_ids=43405
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"TOKEN","email":"dev@mindvalley.com","first_name":"dev"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - db9be356-a26a-4073-9385-df2e698bac6c
+      Etag:
+      - W/"1457c3aa24912f5f377116705b3f46d1"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.037634'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Thu, 07 Jul 2016 10:13:27 GMT
+      Set-Cookie:
+      - _maropost_session=c05092ea2b0f6176fcbea5279b57baa2; path=/; expires=Thu, 07
+        Jul 2016 22:13:27 -0000; HttpOnly
+      X-Powered-By:
+      - Phusion Passenger 5.0.21
+      Server:
+      - nginx/1.8.0 + Phusion Passenger 5.0.21
+    body:
+      encoding: UTF-8
+      string: '{"id":742468929,"email":"dev@mindvalley.com","first_name":"dev","last_name":null,"phone":null,"fax":null,"created_at":"2016-07-07T06:01:51.000-04:00","updated_at":"2016-07-07T06:01:51.000-04:00"}'
+    http_version:
+  recorded_at: Thu, 07 Jul 2016 10:13:27 GMT
+recorded_with: VCR 2.9.3
