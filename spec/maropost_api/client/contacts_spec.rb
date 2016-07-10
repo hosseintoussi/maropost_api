@@ -12,7 +12,7 @@ describe MaropostApi::Client::Contacts do
         params = { email: 'dev@mindvalley.com',
                    first_name: 'dev' }
 
-        response = @client.add_to_list(list_ids: list_ids, params: params)
+        response = @client.add_contact_to_list(list_ids: list_ids, params: params)
         expect(response['email']).to eq(params[:email])
       end
     end
@@ -22,7 +22,7 @@ describe MaropostApi::Client::Contacts do
     context 'when searching for a contact by email' do
       it 'returns the contact if it exists' do
         email = "dev@mindvalley.com"
-        response = @client.find_by_email(email: email)
+        response = @client.find_contact_by_email(email: email)
         expect(response['email']).to eq(email)
       end
     end
