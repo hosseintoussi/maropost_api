@@ -20,10 +20,14 @@ Or install it yourself as:
 
 ## Usage
 
-Initialize a Client object with `client = MaropostApi::Client.new(auth_token: '<TOKEN>', account_number: '<ID>')`
 And here are the methods available:
 
 ``` ruby
+# Initialize a Client object with:
+client = MaropostApi::Client.new(auth_token: '<TOKEN>', account_number: '<ID>')
+
+# And use the client to perform available functionalities.
+
 # To find a contact by email:
 client.contacts.add_to_list(email: 'test@example.com')
 
