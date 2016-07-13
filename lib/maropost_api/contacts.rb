@@ -1,6 +1,6 @@
 module MaropostApi
   class Contacts
-    def initialize(request)
+    def initialize(request:)
       @request = request
     end
 
