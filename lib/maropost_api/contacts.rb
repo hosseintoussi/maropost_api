@@ -5,12 +5,13 @@ module MaropostApi
     end
 
     def find_by_email(email:)
-      @request.get(endpoint: "contacts/email.json?contact[email]=#{email}")
+      response = @request.get(endpoint: "contacts/email.json?contact[email]=#{email}")
+      Response.new(response: response).call
     end
 
     def add_to_list(list_ids:, params:)
-      @list_ids = list_ids
-      @request.post(endpoint: "contacts.json?list_ids=#{@list_ids}", params: params)
+      response = @request.post(endpoint: "contacts.json?list_ids=#{list_ids}", params: params)
+      Response.new(response: response).call
     end
   end
 end
