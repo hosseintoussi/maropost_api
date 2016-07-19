@@ -5,7 +5,7 @@ http_interactions:
     uri: http://api.maropost.com/accounts/ACCOUNT_ID/contacts.json?list_ids=43405
     body:
       encoding: UTF-8
-      string: '{"auth_token":"TOKEN","email":"dev@example.com","first_name":"dev"}'
+      string: '{"auth_token":"TOKEN","email":"example@gmail.com","first_name":"dev"}'
     headers:
       Content-Type:
       - application/json
@@ -29,24 +29,24 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 32aef095-36d5-4137-a3c3-ee224d2e0339
+      - 0d91ef93-649a-4018-9463-246b511d4cd9
       Etag:
-      - W/"1457c3aa24912f5f377116705b3f46d1"
+      - W/"771098e2761b6433944f7dadc84ca133"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.036544'
+      - '0.039545'
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Wed, 13 Jul 2016 09:48:31 GMT
+      - Tue, 19 Jul 2016 14:08:55 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.21
       Server:
       - nginx/1.8.0 + Phusion Passenger 5.0.21
     body:
       encoding: UTF-8
-      string: '{"id":742468929,"email":"dev@example.com","first_name":"dev","last_name":null,"phone":null,"fax":null,"created_at":"2016-07-07T06:01:51.000-04:00","updated_at":"2016-07-07T06:01:51.000-04:00"}'
+      string: '{"id":742521850,"email":"example@gmail.com","first_name":"dev","last_name":null,"phone":null,"fax":null,"created_at":"2016-07-19T10:08:55.332-04:00","updated_at":"2016-07-19T10:08:55.332-04:00"}'
     http_version:
-  recorded_at: Wed, 13 Jul 2016 09:48:31 GMT
+  recorded_at: Tue, 19 Jul 2016 14:08:55 GMT
 recorded_with: VCR 2.9.3
