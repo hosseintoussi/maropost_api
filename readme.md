@@ -34,8 +34,14 @@ client.contacts.find_by_email(email: 'test@example.com')
 # To add a contact to a list
 client.contacts.add_to_list(list_ids: '<id>', params: {email: 'test@example.com'})
 
+# To create a contact without any lists
+client.contacts.create(params: {email: 'test@example.com'})
+
 # To update a contact
-client.contacts.update(list_ids: '<id>', params: {email: 'test@example.com', first_name: 'test-updated'})
+client.contacts.update(contact_id: '<id>', params: {email: 'test@example.com', first_name: 'test-updated'})
+
+# To unsubscribe a contact from all lists
+client.contacts.unsubscribe_all_lists(email: 'test@example.com')
 ```
 
 ## Development
