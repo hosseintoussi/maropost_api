@@ -18,6 +18,10 @@ module MaropostApi
       self.class.get(uri(endpoint), payload(params))
     end
 
+    def put(endpoint:, params: {})
+      self.class.put(uri(endpoint), payload(params))
+    end
+
     private
 
     def set_default_config
