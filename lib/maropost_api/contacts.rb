@@ -13,7 +13,6 @@ module MaropostApi
       response = @request.post(endpoint: "contacts.json?list_ids=#{list_ids}", params: params)
       Response.new(response: response).call
     end
-    alias_method :update, :add_to_list
 
     def create(params:)
       response = @request.post(endpoint: "contacts.json", params: params)
