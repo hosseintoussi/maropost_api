@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://api.maropost.com/accounts/ACCOUNT_ID/workflows/9359/stop/742520380.json
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"TOKEN"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Connection:
+      - keep-alive
+      Status:
+      - 204 No Content
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - d2c608e5-3b73-4192-8c5f-e5811d58549e
+      Location:
+      - "/accounts/ACCOUNT_ID/workflows"
+      X-Runtime:
+      - '0.015027'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Wed, 20 Jul 2016 03:04:44 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.21
+      Server:
+      - nginx/1.8.0 + Phusion Passenger 5.0.21
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version:
+  recorded_at: Wed, 20 Jul 2016 03:04:44 GMT
+recorded_with: VCR 2.9.3

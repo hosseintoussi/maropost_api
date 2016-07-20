@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://api.maropost.com/accounts/ACCOUNT_ID/workflows/9359/start/742520380.json
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"TOKEN"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 867b6254-379b-4afa-bb72-c012a0962f11
+      Etag:
+      - W/"c2fd5483690db019221abf05e8457f41"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.020300'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 19 Jul 2016 08:07:54 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.21
+      Server:
+      - nginx/1.8.0 + Phusion Passenger 5.0.21
+    body:
+      encoding: UTF-8
+      string: Success! Workflow triggered for contact.
+    http_version:
+  recorded_at: Tue, 19 Jul 2016 08:07:55 GMT
+recorded_with: VCR 2.9.3

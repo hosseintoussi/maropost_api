@@ -27,4 +27,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "httparty"
   spec.add_runtime_dependency "hashie"
+  spec.add_runtime_dependency "addressable"
 end
