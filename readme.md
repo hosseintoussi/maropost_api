@@ -42,6 +42,15 @@ client.contacts.update(contact_id: '<id>', params: {email: 'test@example.com', f
 
 # To unsubscribe a contact from all lists
 client.contacts.unsubscribe_all_lists(email: 'test@example.com')
+
+# To start a workflow for a contact
+client.workflows.start(workflow_id: '<workflow_id>', contact_id: '<contact_id>')
+
+# To stop a workflow for a contact
+client.workflows.stop(workflow_id: '<workflow_id>', contact_id: '<contact_id>')
+
+# To reset a workflow for a contact
+client.workflows.reset(workflow_id: '<workflow_id>', contact_id: '<contact_id>')
 ```
 
 ## Development
