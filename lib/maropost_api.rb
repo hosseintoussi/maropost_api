@@ -7,6 +7,7 @@ require "maropost_api/parser/entity_parser"
 require "maropost_api/parser/message_body_parser"
 require "maropost_api/client"
 require "maropost_api/contacts"
+require "maropost_api/workflows"
 
 module MaropostApi
 end
