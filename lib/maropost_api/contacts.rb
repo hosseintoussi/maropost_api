@@ -6,7 +6,7 @@ module MaropostApi
     end
 
     def find_by_email(email:)
-      response = @request.get(endpoint: "/contacts/email.json?contact[email]=#{email}")
+      response = @request.get(endpoint: "/contacts/email.json?contact[email]=#{CGI.escape(email)}")
       Response.new(response: response, parser: @parser).call
     end
 
@@ -26,7 +26,7 @@ module MaropostApi
     end
 
     def unsubscribe_all_lists(email:)
-      response = @request.put(endpoint: "/contacts/unsubscribe_all.json?contact[email]=#{email}")
+      response = @request.put(endpoint: "/contacts/unsubscribe_all.json?contact[email]=#{CGI.escape(email)}")
       Response.new(response: response, parser: @parser).call
     end
   end

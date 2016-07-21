@@ -30,7 +30,7 @@ module MaropostApi
     end
 
     def uri(endpoint)
-      Addressable::URI.encode("#{@base_uri}#{endpoint}")
+     "#{@base_uri}#{endpoint}"
     end
 
     def payload(params)
