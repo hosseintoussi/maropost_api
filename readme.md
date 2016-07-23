@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/maropost_api.svg)](https://badge.fury.io/rb/maropost_api)
+
 # MaropostApi
 
 A simple ruby wrapper for Maropost (http://maropost.com/) API.
