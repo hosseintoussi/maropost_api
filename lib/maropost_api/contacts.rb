@@ -29,5 +29,7 @@ module MaropostApi
       response = @request.put(endpoint: "/contacts/unsubscribe_all.json?contact[email]=#{CGI.escape(email)}")
       Response.new(response: response, parser: @parser).call
     end
+
+    alias :upsert :create
   end
 end

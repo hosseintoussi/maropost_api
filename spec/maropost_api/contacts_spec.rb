@@ -44,6 +44,20 @@ describe MaropostApi::Contacts do
     end
   end
 
+  describe "#upsert", vcr: true do
+    context "when correct params are passed" do
+      it "sends a post requests with provided params" do
+        params = { email: "example@gmail.com",
+                   first_name: "dev_change" }
+
+        response = @client.contacts.upsert(params: params)
+
+        expect(response.email).to eq(params[:email])
+        expect(response.first_name).to eq(params[:first_name])
+      end
+    end
+  end
+
   describe "#update", vcr: true do
     context "when correct are passed to update a contact." do
       it "sends a put request with provided params" do
