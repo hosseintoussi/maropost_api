@@ -39,7 +39,7 @@ client.contacts.add_to_list(list_ids: '<id>', params: {email: 'test@example.com'
 # To create a contact without any lists
 client.contacts.create(params: {email: 'test@example.com'})
 
-# To upsert a contact without any lists
+# Upsert, alias for contacts.create
 client.contacts.upsert(params: {email: 'test@example.com'})
 
 # To update a contact
