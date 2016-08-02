@@ -42,9 +42,6 @@ http_interactions:
       - nosniff
       Date:
       - Tue, 02 Aug 2016 05:59:09 GMT
-      Set-Cookie:
-      - _maropost_session=46b237c71cba744f3c8e61a480138b09; path=/; expires=Tue, 02
-        Aug 2016 17:59:09 -0000; HttpOnly
       X-Powered-By:
       - Phusion Passenger 5.0.21
       Server:
@@ -52,6 +49,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"message":"Workflow Contact reset successfully!"}'
-    http_version: 
+    http_version:
   recorded_at: Tue, 02 Aug 2016 05:59:09 GMT
 recorded_with: VCR 2.9.3
