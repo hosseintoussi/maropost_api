@@ -11,38 +11,47 @@ http_interactions:
       - application/json
   response:
     status:
-      code: 204
-      message: No Content
+      code: 200
+      message: OK
     headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
+      Vary:
+      - Accept-Encoding
       Status:
-      - 204 No Content
+      - 200 OK
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       Strict-Transport-Security:
       - max-age=0; includeSubDomains
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - d2c608e5-3b73-4192-8c5f-e5811d58549e
-      Location:
-      - "/accounts/ACCOUNT_ID/workflows"
-      X-Runtime:
-      - '0.015027'
+      - c4056fc2-6c03-4c05-b50a-0bfb1a9312ea
+      Etag:
+      - W/"c73b54a93bda419e048ca4b823f773fc"
       X-Frame-Options:
       - SAMEORIGIN
+      X-Runtime:
+      - '0.029048'
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Wed, 20 Jul 2016 03:04:44 GMT
+      - Tue, 02 Aug 2016 05:59:08 GMT
+      Set-Cookie:
+      - _maropost_session=6f796f89e070304b9f93ddba831da118; path=/; expires=Tue, 02
+        Aug 2016 17:59:08 -0000; HttpOnly
       X-Powered-By:
       - Phusion Passenger 5.0.21
       Server:
       - nginx/1.8.0 + Phusion Passenger 5.0.21
     body:
       encoding: UTF-8
-      string: ''
-    http_version:
-  recorded_at: Wed, 20 Jul 2016 03:04:44 GMT
+      string: '{"message":"Success! Workflow stopped for this contact."}'
+    http_version: 
+  recorded_at: Tue, 02 Aug 2016 05:59:09 GMT
 recorded_with: VCR 2.9.3
