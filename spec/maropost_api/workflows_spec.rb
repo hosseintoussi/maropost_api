@@ -24,7 +24,7 @@ describe MaropostApi::Workflows do
         contact_id = "742520380"
 
         response = @client.workflows.stop(workflow_id: workflow_id, contact_id: contact_id)
-        expect(response.message).to be_nil
+        expect(response.message).to include('Success')
       end
     end
   end
