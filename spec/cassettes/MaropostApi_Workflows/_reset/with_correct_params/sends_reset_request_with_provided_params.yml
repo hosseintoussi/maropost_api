@@ -31,17 +31,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 996893a1-743e-4f56-8123-1016f8d8e831
+      - 3c9934e3-a6c1-47d4-8956-bc753ed609a6
       Etag:
       - W/"f48aa008871496dbac5bc9c59d089984"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.049222'
+      - '0.045826'
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Wed, 20 Jul 2016 03:04:59 GMT
+      - Tue, 02 Aug 2016 05:59:09 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.21
       Server:
@@ -50,5 +50,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"message":"Workflow Contact reset successfully!"}'
     http_version:
-  recorded_at: Wed, 20 Jul 2016 03:04:59 GMT
+  recorded_at: Tue, 02 Aug 2016 05:59:09 GMT
 recorded_with: VCR 2.9.3
