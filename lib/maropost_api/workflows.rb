@@ -1,8 +1,8 @@
 module MaropostApi
   class Workflows
-    def initialize(request:)
+    def initialize(request:, parser: Parser::EntityParser.new)
       @request = request
-      @entity_parser = Parser::EntityParser.new
+      @entity_parser = parser
     end
 
     def stop(workflow_id:, contact_id:)

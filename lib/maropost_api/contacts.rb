@@ -1,8 +1,8 @@
 module MaropostApi
   class Contacts
-    def initialize(request:)
+    def initialize(request:, parser: Parser::EntityParser.new)
       @request = request
-      @parser = Parser::EntityParser.new
+      @parser = parser
     end
 
     def find_by_email(email:)
