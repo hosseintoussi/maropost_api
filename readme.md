@@ -56,6 +56,12 @@ client.workflows.stop(workflow_id: '<workflow_id>', contact_id: '<contact_id>')
 
 # To reset a workflow for a contact
 client.workflows.reset(workflow_id: '<workflow_id>', contact_id: '<contact_id>')
+
+# To check if a contact is in DNM list:
+client.global_unsubscribes.find_by_email(email: 'test@example.com')
+
+# To add a contact to DNM list:
+client.global_unsubscribes.add_to_dnm(email: 'test@example.com')
 ```
 
 ## Development
