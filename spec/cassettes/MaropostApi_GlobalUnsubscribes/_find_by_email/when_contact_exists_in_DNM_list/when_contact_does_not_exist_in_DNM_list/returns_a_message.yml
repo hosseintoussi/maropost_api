@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.maropost.com/accounts/ACCOUNT_ID/global_unsubscribes/email.json?contact%5Bemail%5D=example3@gmail.com
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"TOKEN"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 12d01a06-7b16-40ca-868e-470cd7d368d1
+      Etag:
+      - W/"897c9d0ddfe3d51e183ff1607cb19a4c"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.014238'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Mon, 15 Aug 2016 04:16:22 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.0.21
+      Server:
+      - nginx/1.8.0 + Phusion Passenger 5.0.21
+    body:
+      encoding: UTF-8
+      string: '{"message":"Contact not present.","status":404}'
+    http_version:
+  recorded_at: Mon, 15 Aug 2016 04:16:23 GMT
+recorded_with: VCR 2.9.3
