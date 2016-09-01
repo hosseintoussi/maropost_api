@@ -12,7 +12,7 @@ describe MaropostApi::Journeys do
         contact_id = "742520380"
 
         response = @client.journeys.start(journey_id: journey_id, contact_id: contact_id)
-        expect(response.message).to include('Success')
+        expect(response.message).to include("Success")
       end
     end
   end
@@ -24,7 +24,7 @@ describe MaropostApi::Journeys do
         contact_id = "742520380"
 
         response = @client.journeys.stop(journey_id: journey_id, contact_id: contact_id)
-        expect(response.message).to include('Success')
+        expect(response.message).to include("Success")
       end
     end
   end
@@ -36,7 +36,16 @@ describe MaropostApi::Journeys do
         contact_id = "742520380"
 
         response = @client.journeys.reset(journey_id: journey_id, contact_id: contact_id)
-        expect(response.message).to include('successfully')
+        expect(response.message).to include("successfully")
+      end
+    end
+  end
+
+  describe "#stop_all_journeys", vcr: true do
+    context "with correct params" do
+      it "stops all the journeys for the provided email" do
+        response = @client.journeys.stop_all_journeys(email: "example@gmail.com")
+        expect(response.message).to include("Success")
       end
     end
   end

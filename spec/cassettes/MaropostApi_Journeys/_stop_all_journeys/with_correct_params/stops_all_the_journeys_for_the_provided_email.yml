@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://api.maropost.com/accounts/ACCOUNT_ID/journeys/stop_all_journeys.json?email=example@gmail.com
+    body:
+      encoding: UTF-8
+      string: '{"auth_token":"TOKEN"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - ebe97603-e97f-492c-8a6f-04eea2a06611
+      Etag:
+      - W/"656683cbbf20cb10a2c8d7bc359c0603"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.018292'
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Thu, 01 Sep 2016 06:48:14 GMT
+      Set-Cookie:
+      - _maropost_session=25213cddf819c04811f34a9a70fc105a; path=/; expires=Thu, 01
+        Sep 2016 18:48:14 -0000; HttpOnly
+      X-Powered-By:
+      - Phusion Passenger 5.0.21
+      Server:
+      - nginx/1.8.0 + Phusion Passenger 5.0.21
+    body:
+      encoding: UTF-8
+      string: '{"message":"Success! All workflows are stopped for this contact."}'
+    http_version: 
+  recorded_at: Thu, 01 Sep 2016 06:48:14 GMT
+recorded_with: VCR 2.9.3
