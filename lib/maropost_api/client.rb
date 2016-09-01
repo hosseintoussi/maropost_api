@@ -8,6 +8,10 @@ module MaropostApi
       @contacts ||= Contacts.new(request: @request)
     end
 
+    def journeys
+      @journeys ||= Journeys.new(request: @request)
+    end
+
     def workflows
       @workflows ||= Workflows.new(request: @request)
     end
