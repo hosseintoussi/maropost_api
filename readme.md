@@ -1,4 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/maropost_api.svg)](https://badge.fury.io/rb/maropost_api)
+[![Build Status](https://travis-ci.org/hosseintoussi/maropost_api.svg?branch=adding-support-for-journeys)](https://travis-ci.org/hosseintoussi/maropost_api)
 
 # MaropostApi
 
