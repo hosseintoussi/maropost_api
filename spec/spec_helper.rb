@@ -1,6 +1,6 @@
 $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
 require "maropost_api"
-require "VCR"
+require "vcr"
 
 TOKEN = "TOKEN".freeze
 ACCOUNT_ID = "ACCOUNT_ID".freeze

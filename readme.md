@@ -1,4 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/maropost_api.svg)](https://badge.fury.io/rb/maropost_api)
+[![Build Status](https://travis-ci.org/hosseintoussi/maropost_api.svg?branch=adding-support-for-journeys)](https://travis-ci.org/hosseintoussi/maropost_api)
 
 # MaropostApi
 
@@ -48,6 +49,26 @@ client.contacts.update(contact_id: '<id>', params: {email: 'test@example.com', f
 # To unsubscribe a contact from all lists
 client.contacts.unsubscribe_all_lists(email: 'test@example.com')
 
+# To check if a contact is in DNM list:
+client.global_unsubscribes.find_by_email(email: 'test@example.com')
+
+# To add a contact to DNM list:
+client.global_unsubscribes.add_to_dnm(email: 'test@example.com')
+
+# To start a journey for a contact
+client.journeys.start(journey_id: '<journey_id>', contact_id: '<contact_id>')
+
+# To stop journey for a contact
+client.journeys.stop(journey_id: '<journey_id>', contact_id: '<contact_id>')
+
+# To reset a journey for a contact
+client.journeys.reset(journey_id: '<journey_id>', contact_id: '<contact_id>')
+
+# To stop all journeys for a contact
+client.journeys.stop_all_journeys(email: 'test@example.com')
+
+## Endpoints that are going to be deprecated soon:
+
 # To start a workflow for a contact
 client.workflows.start(workflow_id: '<workflow_id>', contact_id: '<contact_id>')
 
@@ -56,12 +77,6 @@ client.workflows.stop(workflow_id: '<workflow_id>', contact_id: '<contact_id>')
 
 # To reset a workflow for a contact
 client.workflows.reset(workflow_id: '<workflow_id>', contact_id: '<contact_id>')
-
-# To check if a contact is in DNM list:
-client.global_unsubscribes.find_by_email(email: 'test@example.com')
-
-# To add a contact to DNM list:
-client.global_unsubscribes.add_to_dnm(email: 'test@example.com')
 ```
 
 ## Development
