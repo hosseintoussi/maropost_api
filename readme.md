@@ -59,7 +59,7 @@ client.global_unsubscribes.add_to_dnm(email: 'test@example.com')
 client.journeys.start(journey_id: '<journey_id>', contact_id: '<contact_id>')
 
 # To stop journey for a contact
-client.journeys.stop(journey_id: journey_id>', contact_id: '<contact_id>')
+client.journeys.stop(journey_id: '<journey_id>', contact_id: '<contact_id>')
 
 # To reset a journey for a contact
 client.journeys.reset(journey_id: '<journey_id>', contact_id: '<contact_id>')
