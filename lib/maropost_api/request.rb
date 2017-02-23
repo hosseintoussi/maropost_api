@@ -3,7 +3,6 @@ require 'httparty'
 module MaropostApi
   class Request
     include HTTParty
-    debug_output $stdout unless ENV["RACK_ENV"] == "production"
 
     def initialize(auth_token:, account_number:)
       @auth_token = auth_token
