@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.maropost.com/accounts/ACCOUNT_ID/global_unsubscribes.json
+    uri: http://api.maropost.com/accounts/ACCOUNT_ID/global_unsubscribes.json?auth_token=TOKEN
     body:
       encoding: UTF-8
-      string: '{"auth_token":"TOKEN","global_unsubscribe":{"email":"example5@gmail.com"}}'
+      string: '{"global_unsubscribe":{"email":"example5@gmail.com"}}'
     headers:
       Content-Type:
       - application/json
@@ -18,8 +18,6 @@ http_interactions:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
-      Connection:
-      - keep-alive
       Status:
       - 201 Created
       Cache-Control:
@@ -29,26 +27,26 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - f51b30e4-fc47-4bba-badc-80a53c8e5744
+      - e7c3f971-6939-4b6e-a7af-e4719dc38e0d
       Location:
       - "/accounts/ACCOUNT_ID/global_unsubscribes"
       Etag:
-      - W/"fedcde551918da6669345843075f1af3"
+      - W/"f25b203ded9f6d2a0515dfACCOUNT_ID334a938"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.021909'
+      - '0.024268'
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 15 Aug 2016 04:16:23 GMT
+      - Thu, 23 Feb 2017 04:47:41 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.21
       Server:
       - nginx/1.8.0 + Phusion Passenger 5.0.21
     body:
       encoding: UTF-8
-      string: '{"id":85080340,"email":"example5@gmail.com","created_at":"2016-08-15T00:16:23.476-04:00","updated_at":"2016-08-15T00:16:23.476-04:00"}'
-    http_version:
-  recorded_at: Mon, 15 Aug 2016 04:16:23 GMT
+      string: '{"id":104109152,"account_id":ACCOUNT_ID,"email":"example5@gmail.com","created_at":"2017-02-22T23:47:41.707-05:00","updated_at":"2017-02-22T23:47:41.707-05:00"}'
+    http_version: 
+  recorded_at: Thu, 23 Feb 2017 04:47:41 GMT
 recorded_with: VCR 2.9.3

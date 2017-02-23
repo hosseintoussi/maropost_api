@@ -26,7 +26,7 @@ module MaropostApi
 
     def set_default_config
       @base_uri = "http://api.maropost.com/accounts/#{@account_number}"
-      @default_params = { auth_token: @auth_token }
+      @default_params = { }
     end
 
     def uri(endpoint)
@@ -34,8 +34,11 @@ module MaropostApi
     end
 
     def payload(params)
-      { body: merge_auth_token(params).to_json,
-        headers: { 'Content-Type' => 'application/json' } }
+      {
+        query: { auth_token: @auth_token },
+        body: merge_auth_token(params).to_json,
+        headers: { 'Content-Type' => 'application/json' }
+      }
     end
 
     def merge_auth_token(params)

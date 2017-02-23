@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.maropost.com/accounts/ACCOUNT_ID/contacts.json
+    uri: http://api.maropost.com/accounts/ACCOUNT_ID/contacts.json?auth_token=TOKEN
     body:
       encoding: UTF-8
-      string: '{"auth_token":"TOKEN","email":"example@gmail.com","first_name":"dev_change"}'
+      string: '{"email":"example@gmail.com","first_name":"dev_change"}'
     headers:
       Content-Type:
       - application/json
@@ -18,8 +18,6 @@ http_interactions:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
-      Connection:
-      - keep-alive
       Status:
       - 201 Created
       Cache-Control:
@@ -29,24 +27,24 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - dd99aaaa-2327-4822-9f7e-4c984c85a7ba
+      - dfcbb615-2544-4a82-98ea-e6f7db7821bf
       Etag:
-      - W/"26762581bf9ac3316724663f97079b16"
+      - W/"a4a1454dd53c5a81632ba87b1b9b2cc3"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.027904'
+      - '0.030283'
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Tue, 19 Jul 2016 14:08:57 GMT
+      - Thu, 23 Feb 2017 04:45:18 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.21
       Server:
       - nginx/1.8.0 + Phusion Passenger 5.0.21
     body:
       encoding: UTF-8
-      string: '{"id":742521850,"email":"example@gmail.com","first_name":"dev_change","last_name":null,"phone":null,"fax":null,"created_at":"2016-07-19T10:08:55.000-04:00","updated_at":"2016-07-19T10:08:55.000-04:00"}'
-    http_version:
-  recorded_at: Tue, 19 Jul 2016 14:08:57 GMT
+      string: '{"id":742521850,"email":"example@gmail.com","first_name":"dev_change","last_name":null,"phone":null,"fax":null,"created_at":"2016-07-19T10:08:55.000-04:00","updated_at":"2017-02-22T23:45:18.969-05:00","channel":null,"chakra0_411":null,"chakra1_157":null,"chakra2_158":null,"chakra3_159":null,"chakra4_160":null,"chakra5_161":null,"chakra6_162":null,"chakra7_163":null,"codex_download_code":null}'
+    http_version: 
+  recorded_at: Thu, 23 Feb 2017 04:45:18 GMT
 recorded_with: VCR 2.9.3

@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.maropost.com/accounts/ACCOUNT_ID/contacts.json
+    uri: http://api.maropost.com/accounts/ACCOUNT_ID/contacts.json?auth_token=TOKEN
     body:
       encoding: UTF-8
-      string: '{"auth_token":"TOKEN","email":"example@gmail.com","first_name":"dev"}'
+      string: '{"email":"example@gmail.com","first_name":"dev"}'
     headers:
       Content-Type:
       - application/json
@@ -18,8 +18,6 @@ http_interactions:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
-      Connection:
-      - keep-alive
       Status:
       - 201 Created
       Cache-Control:
@@ -29,32 +27,32 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 83484afd-1341-4eb0-b83a-f5c33deea59f
+      - 7f4fc63b-ec00-4627-a780-25122a1664ac
       Etag:
-      - W/"26762581bf9ac3316724663f97079b16"
+      - W/"7cd68fe7656621cf19398f88a8fbea53"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.026789'
+      - '0.046176'
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Tue, 19 Jul 2016 14:08:58 GMT
+      - Thu, 23 Feb 2017 04:45:19 GMT
       X-Powered-By:
-      - Phusion Passenger 5.0.21
+      - Phusion Passenger 5.0.14
       Server:
-      - nginx/1.8.0 + Phusion Passenger 5.0.21
+      - nginx/1.8.0 + Phusion Passenger 5.0.14
     body:
       encoding: UTF-8
-      string: '{"id":742521850,"email":"example@gmail.com","first_name":"dev","last_name":null,"phone":null,"fax":null,"created_at":"2016-07-19T10:08:55.000-04:00","updated_at":"2016-07-19T10:08:55.000-04:00"}'
-    http_version:
-  recorded_at: Tue, 19 Jul 2016 14:08:58 GMT
+      string: '{"id":742521850,"email":"example@gmail.com","first_name":"dev","last_name":null,"phone":null,"fax":null,"created_at":"2016-07-19T10:08:55.000-04:00","updated_at":"2017-02-22T23:45:19.592-05:00","channel":null,"chakra0_411":null,"chakra1_157":null,"chakra2_158":null,"chakra3_159":null,"chakra4_160":null,"chakra5_161":null,"chakra6_162":null,"chakra7_163":null,"codex_download_code":null}'
+    http_version: 
+  recorded_at: Thu, 23 Feb 2017 04:45:19 GMT
 - request:
     method: put
-    uri: http://api.maropost.com/accounts/ACCOUNT_ID/contacts/742521850.json
+    uri: http://api.maropost.com/accounts/ACCOUNT_ID/contacts/742521850.json?auth_token=TOKEN
     body:
       encoding: UTF-8
-      string: '{"auth_token":"TOKEN","first_name":"test"}'
+      string: '{"first_name":"test"}'
     headers:
       Content-Type:
       - application/json
@@ -67,8 +65,6 @@ http_interactions:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
-      Connection:
-      - keep-alive
       Status:
       - 201 Created
       Cache-Control:
@@ -78,24 +74,24 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 7d10be5b-150d-4a77-8865-cf9fa209c64d
+      - 5eff7dd5-b3cd-48d1-b09e-7d220e594eba
       Etag:
-      - W/"39c9f61858fd12219015cab43cda71fa"
+      - W/"060601eeef4ba14900fcd83d15101081"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.030517'
+      - '0.069596'
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Tue, 19 Jul 2016 14:08:58 GMT
+      - Thu, 23 Feb 2017 04:45:20 GMT
       X-Powered-By:
-      - Phusion Passenger 5.0.21
+      - Phusion Passenger 5.0.14
       Server:
-      - nginx/1.8.0 + Phusion Passenger 5.0.21
+      - nginx/1.8.0 + Phusion Passenger 5.0.14
     body:
       encoding: UTF-8
-      string: '{"id":742521850,"email":"example@gmail.com","first_name":"test","last_name":null,"phone":null,"fax":null,"created_at":"2016-07-19T10:08:55.000-04:00","updated_at":"2016-07-19T10:08:58.803-04:00"}'
-    http_version:
-  recorded_at: Tue, 19 Jul 2016 14:08:58 GMT
+      string: '{"id":742521850,"email":"example@gmail.com","first_name":"test","last_name":null,"phone":null,"fax":null,"created_at":"2016-07-19T10:08:55.000-04:00","updated_at":"2017-02-22T23:45:20.217-05:00","channel":null,"chakra0_411":null,"chakra1_157":null,"chakra2_158":null,"chakra3_159":null,"chakra4_160":null,"chakra5_161":null,"chakra6_162":null,"chakra7_163":null,"codex_download_code":null}'
+    http_version: 
+  recorded_at: Thu, 23 Feb 2017 04:45:19 GMT
 recorded_with: VCR 2.9.3

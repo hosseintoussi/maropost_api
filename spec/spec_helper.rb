@@ -3,7 +3,7 @@ require "maropost_api"
 require "vcr"
 
 TOKEN = "TOKEN".freeze
-ACCOUNT_ID = "ACCOUNT_ID".freeze
+ACCOUNT_ID = "0".freeze
 
 VCR.configure do |c|
   c.hook_into :webmock
