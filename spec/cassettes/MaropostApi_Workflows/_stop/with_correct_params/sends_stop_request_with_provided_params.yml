@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.maropost.com/accounts/ACCOUNT_ID/workflows/9359/stop/742520380.json
+    uri: http://api.maropost.com/accounts/ACCOUNT_ID/workflows/9359/stop/742520380.json?auth_token=TOKEN
     body:
       encoding: UTF-8
-      string: '{"auth_token":"TOKEN"}'
+      string: "{}"
     headers:
       Content-Type:
       - application/json
@@ -18,8 +18,6 @@ http_interactions:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
-      Connection:
-      - keep-alive
       Vary:
       - Accept-Encoding
       Status:
@@ -31,24 +29,24 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - c4056fc2-6c03-4c05-b50a-0bfb1a9312ea
+      - a0bcb84d-fd7c-48b8-9129-645c78b35c69
       Etag:
       - W/"c73b54a93bda419e048ca4b823f773fc"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.029048'
+      - '0.032820'
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Tue, 02 Aug 2016 05:59:08 GMT
+      - Thu, 23 Feb 2017 04:45:25 GMT
       X-Powered-By:
-      - Phusion Passenger 5.0.21
+      - Phusion Passenger 5.0.14
       Server:
-      - nginx/1.8.0 + Phusion Passenger 5.0.21
+      - nginx/1.8.0 + Phusion Passenger 5.0.14
     body:
       encoding: UTF-8
       string: '{"message":"Success! Workflow stopped for this contact."}'
-    http_version:
-  recorded_at: Tue, 02 Aug 2016 05:59:09 GMT
+    http_version: 
+  recorded_at: Thu, 23 Feb 2017 04:45:25 GMT
 recorded_with: VCR 2.9.3

@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: put
-    uri: http://api.maropost.com/accounts/ACCOUNT_ID/journeys/12429/reset/742520380.json
+    uri: http://api.maropost.com/accounts/ACCOUNT_ID/journeys/12429/reset/742520380.json?auth_token=TOKEN
     body:
       encoding: UTF-8
-      string: '{"auth_token":"TOKEN"}'
+      string: "{}"
     headers:
       Content-Type:
       - application/json
@@ -18,8 +18,6 @@ http_interactions:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
-      Connection:
-      - keep-alive
       Vary:
       - Accept-Encoding
       Status:
@@ -31,17 +29,17 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - a08e15dd-1189-40e7-8a88-3b70139784dc
+      - 8dc0d512-fb9e-4231-8249-a7e3af1b9acb
       Etag:
       - W/"f48aa008871496dbac5bc9c59d089984"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.046516'
+      - '0.036186'
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Thu, 01 Sep 2016 05:34:36 GMT
+      - Thu, 23 Feb 2017 04:49:44 GMT
       X-Powered-By:
       - Phusion Passenger 5.0.21
       Server:
@@ -49,6 +47,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"message":"Workflow Contact reset successfully!"}'
-    http_version:
-  recorded_at: Thu, 01 Sep 2016 05:34:36 GMT
+    http_version: 
+  recorded_at: Thu, 23 Feb 2017 04:49:44 GMT
 recorded_with: VCR 2.9.3
