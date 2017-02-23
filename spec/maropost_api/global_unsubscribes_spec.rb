@@ -8,9 +8,9 @@ describe MaropostApi::GlobalUnsubscribes do
   describe "#find_by_email", vcr: true do
     context "when contact exists in DNM list" do
       it "returns contact's email" do
-        response = @client.global_unsubscribes.find_by_email(email: "example@gmail.com")
+        response = @client.global_unsubscribes.find_by_email(email: "example2@gmail.com")
 
-        expect(response.email).to eq("example@gmail.com")
+        expect(response.email).to eq("example2@gmail.com")
       end
 
     context "when contact does not exist in DNM list" do
